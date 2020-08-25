@@ -7,7 +7,7 @@ function Header() {
     return (
         <nav className="header"> 
             <Link to="/">
-                <img className="header__logo" src="/logo192.png" />
+                <img className="header__logo" alt="logo" src="/logo192.png" />
             </Link>
             <div className="header__search">
                 <imput type="text" className="header__serachImput" />
