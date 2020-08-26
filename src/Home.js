@@ -12,14 +12,14 @@ function Home() {
             />
             <div className="home__row">
                 <Product 
-                    id='12331'
+                    id='1'
                     title='the tetet etaeta edsas'
                     price={12.34}
                     rating={5}
                     img="https://images-eu.ssl-images-amazon.com/images/G/03/kindle/merch/mso/card/desk-mso-ms-758x608._SY608_CB445597548_.jpg"
                 />
                 <Product 
-                    id='12331'
+                    id='2'
                     title='the tetet etaeta edsas'
                     price={12.34}
                     rating={5}
@@ -28,21 +28,21 @@ function Home() {
             </div>
             <div className="home__row">
                 <Product 
-                    id='12331'
+                    id='3'
                     title='the tetet etaeta edsas'
                     price={12.34}
                     rating={5}
                     img="https://images-eu.ssl-images-amazon.com/images/G/03/kindle/merch/mso/card/desk-mso-ms-758x608._SY608_CB445597548_.jpg"
                 />
                 <Product 
-                    id='12331'
+                    id='4'
                     title='the tetet etaeta edsas'
                     price={12.34}
                     rating={5}
                     img="https://images-eu.ssl-images-amazon.com/images/G/03/kindle/merch/mso/card/desk-mso-ms-758x608._SY608_CB445597548_.jpg"
                  />
                  <Product 
-                    id='12331'
+                    id='5'
                     title='the tetet etaeta edsas'
                     price={12.34}
                     rating={5}
