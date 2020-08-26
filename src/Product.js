@@ -1,27 +1,38 @@
 import React from 'react'
 import './Product.css'
+import { useStateValue } from "./StateProvider";
 
 function Product({id,title,img,price,rating}) {
+    // eslint-disable-next-line no-empty-pattern
+    const [{}, dispatch] = useStateValue()
+
+    const addToBasket  = () =>{
+        dispatch({
+            type:'ADD_TO_BASKET',
+            item: {id,title,img,price,rating}
+        })
+    }
+
     return (
         <div className="product">
             <div className='product__info'>
                 <p>{ title }</p>
                 <p className="product__price">
                     <small>$</small>
-                    <string>{price}</string>
+                    <strong>{price}</strong>
                 </p>
-                <div class="product__rating">
+                <div className="product__rating">
                     {
                         Array(rating)
                         .fill()
-                        .map((_) => (
-                            <p>&#11088;</p>
+                        .map((_,i) => (
+                            <span aria-label="star" role="img" key={i}>&#11088;</span>
                         ))
                     }
                 </div>
             </div>
             <img src={img} alt='product' />
-            <button>Add to basket</button>
+            <button onClick={addToBasket} >Add to basket</button>
         </div>
     )
 }
